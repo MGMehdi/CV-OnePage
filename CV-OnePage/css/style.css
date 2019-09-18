@@ -1,0 +1,147 @@
+/************************************** ELEMENTS HTML **************************************/
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    background-image: url(../images/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    
+    background-size: cover; 
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+p{
+    padding-top: 3px;
+    padding-bottom: 3px
+}
+
+a{
+    text-decoration: underline;
+    font-weight: bold;
+    color: white;
+}
+a:hover, a:focus{
+    transition: 500ms;
+    color: #A1ACB3; 
+}
+
+a:active{
+    color: rgba(161, 172, 179, 0.397); 
+
+}
+
+ul{
+    padding-left: 2em;
+}
+
+footer{
+    display: none;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto 20px auto ;
+}
+
+button{
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+/************************************** IDs **************************************/
+
+#CV{
+    opacity: 1;
+    display: block;
+}
+#CV > *{
+    display: block;
+    opacity: 0;
+}
+
+#badge {
+    display: block;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    max-width: 320px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+}
+
+#photoprofil{   
+    width: 0px;
+    height: 0px; 
+    border: solid 10px black;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+#badge > h1, h2, h3{
+    font-weight: bold;
+    text-shadow: 
+    2px   0  0   #000, 
+    -2px   0  0   #000, 
+     0    2px 0   #000, 
+     0   -2px 0   #000, 
+     1px  1px 0   #000, 
+    -1px -1px 0   #000, 
+     1px -1px 0   #000, 
+    -1px  1px 0   #000,
+     1px  1px 0 #000;
+}
+
+#badge > h1{
+    font-size: 44px;
+}
+
+#badge > h2{
+    font-size: 38px;
+}
+#badge > h3{
+    font-size: 34px;
+}
+
+#topArrow{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    transition: 500ms;
+    transform: rotate(-360deg);
+}
+
+#topArrow:hover{
+    transition: 500ms;
+    transform: rotate(360deg);
+}
+
+/************************************** CLASSE **************************************/
+.cadre{
+    display: block;
+    padding: 1em;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color : rgba(0, 0, 0, 0.3);
+}
+.cadre > h1{
+    font-size: 32px;
+}
+
+.cadre > h2{
+    font-size: 24px;
+    font-weight: normal;
+    text-shadow: none;
+    padding-top: 5px;
+
+}
